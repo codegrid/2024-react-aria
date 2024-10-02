@@ -3,7 +3,7 @@ import { Modal, Dialog } from 'react-aria-components';
 import './modal.css';
 
 function App() {
-  const [isOpen, setOpen] = useState(false);
+  let [isOpen, setOpen] = useState(false);
 
   return (
     <>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Modal, Dialog } from 'react-aria-components';
 
 function App() {
-  const [isOpen, setOpen] = useState(false);
+  let [isOpen, setOpen] = useState(false);
 
   return (
     <>
