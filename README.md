@@ -9,6 +9,7 @@ CodeGrid連載[React AriaでつくるUIコンポーネント](https://www.codegr
 - `1`：スタイルのないモーダルUI
 - `2`：スタイルを付与したモーダルUI
 - `3`：aria-labelを付与したモーダルUI
+
 to be continued...
 
 （記事で紹介されたら説明を更新します）
