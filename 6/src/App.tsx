@@ -13,8 +13,8 @@ const ForwardedModal = forwardRef<HTMLDivElement, ComponentProps<typeof Modal>>(
 );
 
 // motion でラップする
-const MotionModalOverlay = motion(ForwardedModalOverlay);
-const MotionModal = motion(ForwardedModal);
+const MotionModalOverlay = motion.create(ForwardedModalOverlay);
+const MotionModal = motion.create(ForwardedModal);
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -43,7 +43,10 @@ function App() {
               exit={{ scale: 0.5 }}
               transition={{ duration: 0.3, ease: "backOut" }}
             >
-              <Dialog className="overflow-auto p-8">
+              <Dialog
+                className="overflow-auto p-8"
+                aria-label="動作テストモーダル"
+              >
                 <p>モーダルの内容</p>
                 <button className="border" onClick={() => setOpen(false)}>
                   閉じる
